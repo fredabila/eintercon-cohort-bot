@@ -1,0 +1,27 @@
+name: eintercon-cohort-bot
+region: nyc
+
+services:
+- name: eintercon-cohort-bot
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: fredabila/eintercon-cohort-bot
+  
+  # Use worker type (not web service) since this is a bot
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  
+  # Build configuration
+  build_command: npm install
+  
+  # Run configuration  
+  run_command: npm start
+  
+  # Environment
+  envs:
+  - key: NODE_ENV
+    value: production
+  
+  # Source directory
+  source_dir: /
