@@ -10,6 +10,9 @@
   "keywords": ["whatsapp", "bot", "baileys", "group-management"],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.8",
     "pino": "^9.5.0",
