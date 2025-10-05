@@ -12,7 +12,7 @@ cohort_data/
 logs/
 
 #lock files
-package-lock.json
+package-lock.json*
 
 # Environment variables
 .env
