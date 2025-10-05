@@ -53,12 +53,18 @@ npm --version
 apt install git -y
 ```
 
-### Step 5: Clone Your Repository
+### Step 5: Clone Your Repository (First Time Only)
 
 ```bash
 cd /opt
 git clone https://github.com/fredabila/eintercon-cohort-bot.git
 cd eintercon-cohort-bot
+```
+
+**If you already cloned it, update instead:**
+```bash
+cd /opt/eintercon-cohort-bot
+git pull origin main
 ```
 
 ### Step 6: Install Dependencies
