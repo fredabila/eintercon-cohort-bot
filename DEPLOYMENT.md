@@ -38,12 +38,12 @@ ssh root@your_droplet_ip
 # Update system
 apt update && apt upgrade -y
 
-# Install Node.js 18.x
-curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+# Install Node.js 18.x or higher (18, 20, or 22 LTS versions work)
+curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
 apt-get install -y nodejs
 
 # Verify installation
-node --version
+node --version  # Should be 18.x, 20.x, or 22.x
 npm --version
 ```
 
@@ -178,7 +178,8 @@ git push
 ### "makeWASocket is not a function"
 - Run: `npm install` or `npm ci`
 - Check that `@whiskeysockets/baileys` is installed in node_modules
-- Verify Node.js version: `node --version` (should be 18.x)
+- Verify Node.js version: `node --version` (should be 18.x or higher)
+- Delete node_modules and package-lock.json, then run `npm install` again
 
 ### "Connection Closed"
 - WhatsApp may have logged out the device
