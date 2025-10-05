@@ -7,9 +7,6 @@ auth_info/
 # Cohort data (contains member information)
 cohort_data/
 
-# JSON files
-*.json
-
 # Logs
 *.log
 logs/
